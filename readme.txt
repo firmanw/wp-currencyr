@@ -36,6 +36,9 @@ Visit the plugin home page at http://adivalabs.com/currencyr or [follow on Githu
 
 == Screenshots ==
 
+1. Converter tooltip sit right at the amount
+2. The settings page
+
 == Changelog ==
 
 = 1.0 =
