@@ -1,12 +1,12 @@
 === Currencyr ===
 Author: AdivaLabs
-Constributors: firmanw
+Contributors: firmanw
 Author URI: http://adivalabs.com
 Plugin URI: http://adivalabs.com/currencyr
 Donate Link: http://adivalabs.com/donate
 Tags: money, currency, conversion, ecommerce, shop, store
 Requires at least: 3.4
-Tested up to: 3.5
+Tested up to: 3.4
 Stable tag: 1.0
 
 A simple yet advanced currency converter
@@ -17,16 +17,16 @@ Instead of traditional "calculator" looks converter, Currencyr take the advance 
 
 = Features =
 
-* Support exchange rates provider Yahoo!, Google, Open Exchange Rates, European Central Bank and FoxRates
-* Database cache
-* WP Cron scheduler
-* Shortcode enabled
+* Various exchange rates providers - Yahoo!, Google, Open Exchange Rates, European Central Bank and FoxRates
+* Support database cache driven for fast load
+* WP Cron task scheduler enabled
+* Shortcode quick conversion support
 * Currency table and converter widget
 * Inline converter using Currencyr for jQuery
 * Auto-determinate local currency
-* Support integration with WooCommerce, WP-eCommerce, Shopp and Easy Digital Downloads
+* Support integration with various ecommerce plugins - WooCommerce, WP-eCommerce, Shopp and Easy Digital Downloads
 
-Visit the plugin home page at http://adivalabs.com/currencyr or [follow on Github](https://github.com/firmanw/wp-currencyr).
+Visit http://adivalabs.com/currencyr for futher details and demo, or [follow on Github](https://github.com/firmanw/wp-currencyr).
 
 == Installation ==
 
