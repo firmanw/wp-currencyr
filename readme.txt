@@ -1,7 +1,7 @@
 === Currencyr ===
 Author: Firman Wandayandi
 Contributors: firmanw
-Author URI: http://adivalabs.com
+Author URI: http://firmanw.com
 Plugin URI: http://adivalabs.com/currencyr
 Donate Link: http://adivalabs.com/donate
 Tags: money, currency, conversion, ecommerce, shop, store
