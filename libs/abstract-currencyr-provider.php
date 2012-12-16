@@ -4,7 +4,7 @@
  *
  * @package    WordPress
  * @subpackage Currencyr
- * @copyright  Copyright (c) 2012 AdivaLabs Media
+ * @copyright  Copyright (c) 2012 Firman Wandayandi
  * @license    GNU General Public License Version 2.0 http://www.gnu.org/licenses/gpl-2.0.html
  * @since      1.0
  */
@@ -15,7 +15,7 @@
  * @abstract
  * @package    WordPress
  * @subpackage Currencyr
- * @copyright  Copyright (c) 2012 AdivaLabs Media
+ * @copyright  Copyright (c) 2012 Firman Wandayandi
  * @license    GNU General Public License Version 2.0 http://www.gnu.org/licenses/gpl-2.0.html
  * @since      1.0
  */

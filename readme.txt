@@ -1,5 +1,5 @@
 === Currencyr ===
-Author: AdivaLabs
+Author: Firman Wandayandi
 Contributors: firmanw
 Author URI: http://adivalabs.com
 Plugin URI: http://adivalabs.com/currencyr

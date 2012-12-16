@@ -1,8 +1,8 @@
 /*!
- * DivaCurrency Admin
+ * Currencyr for WordPress - Admin
  * Version 1.0
  *
- * Copyright (c) 2012 AdivaLabs Media
+ * Copyright (c) 2012 Firman Wandayandi
  * Licensed under GNU General Public License Version 2.0 http://www.gnu.org/licenses/gpl-2.0.html
  *
  * @since 1.0
