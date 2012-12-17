@@ -7,9 +7,9 @@ Donate Link: http://adivalabs.com/donate
 Tags: money, currency, conversion, ecommerce, shop, store
 Requires at least: 3.4
 Tested up to: 3.4
-Stable tag: 1.0
+Stable tag: 1.0.1
 
-A simple yet advanced currency converter
+A simple yet advanced, intuitive, easy-to-use and classy currency converter tooltip.
 
 == Description ==
 
