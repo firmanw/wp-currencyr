@@ -425,9 +425,9 @@ class Currencyr
      */
     public function admin_menu()
     {
-        $this->pages['top'] = add_menu_page( __( 'Currencyr Settings', self::Textdomain ), __( 'Currencyr', self::Textdomain ), 'update-core', self::Slug, array( $this, 'settings_page'), 'div' );
-        $this->pages['settings'] = add_submenu_page( self::Slug, __( 'Currencyr Settings', self::Textdomain ), __( 'Settings', self::Textdomain ), 'update_core', self::Slug, array( $this, 'settings_page' ) );
-        // $this->pages['currencies'] = add_submenu_page( self::Slug, __( 'Currencies', self::Textdomain ), __( 'Currencies', self::Textdomain ), 'update_core', self::Slug . '_currencies', array( $this, 'currencies_page' ) );
+        $this->pages['top'] = add_menu_page( __( 'Currencyr Settings', self::Textdomain ), __( 'Currencyr', self::Textdomain ), 'manage_options', self::Slug, array( $this, 'settings_page'), 'div' );
+        $this->pages['settings'] = add_submenu_page( self::Slug, __( 'Currencyr Settings', self::Textdomain ), __( 'Settings', self::Textdomain ), 'manage_options', self::Slug, array( $this, 'settings_page' ) );
+        // $this->pages['currencies'] = add_submenu_page( self::Slug, __( 'Currencies', self::Textdomain ), __( 'Currencies', self::Textdomain ), 'manage_options', self::Slug . '_currencies', array( $this, 'currencies_page' ) );
     }
 
     
@@ -723,7 +723,7 @@ class Currencyr
      */
     public function currencies_page()
     {
-        
+        // Not implemented yet
     }
 
     /**
