@@ -13,7 +13,7 @@ A simple yet advanced currency converter
 
 == Description ==
 
-Instead of traditional "calculator" looks converter, Currencyr take the advance of "tooltip" and sit right at amount to allow user convert it.
+Instead of traditional "calculator" looks converter, Currencyr take the advance of "tooltip" and sit right at the amount to allow user convert it.
 
 = Features =
 
