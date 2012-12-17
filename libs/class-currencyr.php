@@ -701,11 +701,19 @@ class Currencyr
         <div class="wrap">
           <div id="icon-options-<?php echo self::Id; ?>" class="icon32"></div>
           <h2><?php _e( 'Currencyr Settings', self::Textdomain ); ?></h2>
-          <?php if( isset($_GET['settings-updated']) && $_GET['settings-updated'] ){ ?>
-          <div id="setting-error-settings_updated" class="updated settings-error"> 
+
+          <?php if( isset($_GET['settings-updated']) && $_GET['settings-updated'] ) : ?>
+          <div id="message" class="updated below-h2"> 
             <p><strong><?php _e( 'Settings saved.', self::Textdomain ); ?></strong></p>
           </div>
-          <?php } ?>
+          <?php endif; ?>
+
+          <?php if ( !get_transient(self::Id . '_updated') ): ?>
+          <div class="error">
+            <p>Currencyr just activated, please select the Provider and click Update to initialize the cache.</p>
+          </div>
+          <?php endif; ?>
+
           <form action="options.php" method="post">
             <?php settings_fields( self::Slug ); ?>
             <?php do_settings_sections( self::Slug ); ?>
