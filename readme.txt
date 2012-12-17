@@ -41,6 +41,10 @@ Visit http://adivalabs.com/currencyr for futher details and demo.
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.1 =
+* Fixed settings page capability typo
+* Fixed widget number format
+* Fixed plugin URI
 
+= 1.0 =
 Initial release
