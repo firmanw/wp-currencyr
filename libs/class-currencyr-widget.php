@@ -106,7 +106,7 @@ class Currencyr_Widget extends WP_Widget
             $res = $currencyr->convert( $codes );
             if ( !empty( $res ) ) {
                 foreach( $res as $code => $rate ) {
-                    printf('<li><span>%s</span> %s</li>', $code, number_format( $rate, 4) );
+                    printf('<li><span>%s</span> %s</li>', $code, number_format( $rate, 4, $currencyr->decimal, $currencyr->thousand ) );
                 }
             }
             ?>
@@ -218,7 +218,7 @@ class Currencyr_Widget extends WP_Widget
 
         if ( isset( $res[ $_GET['to'] ] ) ) {
             $res = array(
-                'amount'  => number_format( $res[ $_GET['to'] ], 2 ),
+                'amount'  => number_format( $res[ $_GET['to'] ], $currencyr->precision, $currencyr->decimal, $currencyr->thousand ),
                 'code'    =>  $_GET['to'],
                 'html'    => $_GET['to']
             );
