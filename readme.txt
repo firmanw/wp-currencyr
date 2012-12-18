@@ -34,7 +34,9 @@ To enable the shortcode simply use [currencyr] and use the following syntax:
 
 `[currencyr amount=$amount <from=$code> to=$code<|$code>]`
 
-Anything in "<...>" is optional. When "from" parameter omitted, Base Currency from the setting will be use.
+* **amount** - The number that you wish to convert.
+* **to** - The currency code. Use "|" as separator for multiple conversion.
+* **from** (optional) - The currency code. If omitted the Base Currency from setting will be use.
 
 Examples:
 `[currencyr=99.99 to=gbp]`
@@ -43,6 +45,31 @@ Examples:
 
 `[currencyr=99.99 to=gbp|eur|cad]`
 
+= Function Call =
+
+The conversion feature is available to call within templates or codes using either currencyr_exchange() or the_currencyr_exchange(). Both functions share the same arguments, the diferrent is the_currencyr_exchange() is only echoes the result automatically. You can call the functions as WordPress style or PHP with the following arguments:
+
+* **amount** - The number that you wish to convert.
+* **to** - The currency code.
+* **from** (optional) - The currency code. If omitted the Base Currency from setting will be use.
+
+`<?php echo currencyr_exchange( 'amount=99.99&to=cad'); ?>`
+
+The code above is similar to:
+
+`<?php echo currencyr_exchange( array( 'amount' => 99.99, 'to' => 'cad' ) ); ?>`
+
+Also similar to:
+
+`<?php echo currencyr_exchange( 99.99, 'cad' ); ?>
+
+= Roadmap =
+
+* Add exchange rates table page
+* Add custom currency support
+
+= Feedback =
+If you have any feedback, any at all, tweet [@firmanw](http://twitter.com/firmanw), or head over to the [support forum](http://wordpress.org/support/plugin/currencyr) or [github repository](https://github.com/firmanw/wp-currencyr) and create a new issue.
 
 == Installation ==
 
@@ -57,10 +84,17 @@ Examples:
 
 == Changelog ==
 
+= 1.0.2 =
+
+* Added functions to able to use conversion within templates/codes
+* Added handler when conversion return no result
+
 = 1.0.1 =
+
 * Fixed settings page capability typo
 * Fixed widget number format
 * Fixed plugin URI
 
 = 1.0 =
+
 Initial release
