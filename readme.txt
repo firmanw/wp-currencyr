@@ -28,6 +28,22 @@ Instead of traditional "calculator" looks converter, Currencyr take the advance 
 
 Visit http://adivalabs.com/currencyr for futher details and demo.
 
+= Shortcode =
+
+To enable the shortcode simply use [currencyr] and use the following syntax:
+
+`[currencyr amount=$amount <from=$code> to=$code<|$code>]`
+
+Anything in "<...>" is optional. When "from" parameter omitted, Base Currency from the setting will be use.
+
+Examples:
+`[currencyr=99.99 to=gbp]`
+
+`[currencyr=99.99 from=aud to=gbp]`
+
+`[currencyr=99.99 to=gbp|eur|cad]`
+
+
 == Installation ==
 
 1. Upload the "currencyr" folder to the "/wp-content/plugins" directory
