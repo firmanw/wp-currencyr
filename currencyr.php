@@ -18,11 +18,16 @@ define( 'CURRENCYR_DBTABLE', 'currencyr' );
 define( 'CURRENCYR_LIBS', dirname(__FILE__) . '/libs' );
 
 /**
- * Currencyr_Lite
+ * Currencyr
  */
 require_once CURRENCYR_LIBS . '/class-currencyr.php';
 
-// Creates a new instance of Currencyr_Lite
+/**
+ * Functions
+ */
+require_once CURRENCYR_LIBS . '/functions.php';
+
+// Creates a new instance of Currencyr
 $currencyr = new Currencyr;
 
 register_activation_hook( __FILE__, array( $currencyr, 'activate' ) );
