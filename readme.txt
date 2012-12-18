@@ -7,7 +7,7 @@ Donate Link: http://adivalabs.com/donate
 Tags: money, currency, conversion, ecommerce, shop, store
 Requires at least: 3.4
 Tested up to: 3.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 A simple yet advanced, intuitive, easy-to-use and classy currency converter tooltip.
 
@@ -61,7 +61,7 @@ The code above is similar to:
 
 Also similar to:
 
-`<?php echo currencyr_exchange( 99.99, 'cad' ); ?>
+`<?php echo currencyr_exchange( 99.99, 'cad' ); ?>`
 
 = Roadmap =
 
