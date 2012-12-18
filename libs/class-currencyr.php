@@ -350,12 +350,12 @@ class Currencyr
         $this->add_setting( 'provider', __( 'Provider', self::Textdomain ) );
         $this->add_setting( 'oxrapp_id', __( 'Open Exchange Rates App ID', self::Textdomain ) );
         $this->add_setting( 'update', __( 'Update Rates', self::Textdomain ) );
+        $this->add_setting( 'inline_converter', __( 'Currencyr for jQuery', self::Textdomain ) );
+        $this->add_setting( 'amount_selector', __( 'Amount Selector', self::Textdomain ) );
         $this->add_setting( 'thousand', __( 'Thousand Separator', self::Textdomain ) );
         $this->add_setting( 'decimal', __( 'Decimal Point Separator', self::Textdomain ) );
         $this->add_setting( 'precision', __( 'Decimal Places', self::Textdomain ) );
         $this->add_setting( 'shortcode_separator', __( 'Multiple Separator', self::Textdomain ) );
-        $this->add_setting( 'amount_selector', __( 'Amount Selector', self::Textdomain ) );
-        $this->add_setting( 'inline_converter', __( 'Inline Converter', self::Textdomain ) );
 
         add_action('wp_ajax_currencyr_update', array( $this, 'ajax_update_rates' ) );
     }
@@ -629,7 +629,7 @@ class Currencyr
             self::setting_input_id( 'amount_selector' ),
             $this->settings['amount_selector']
         );
-        printf( '<p class="description">%s</p>', __( 'The <a href="http://api.jquery.com/category/selectors/">jQuery Selector</a> match amount.', self::Textdomain ) );
+        printf( '<p class="description">%s</p>', __( 'The <a href="http://api.jquery.com/category/selectors/">jQuery Selector</a> match amount. Requires by Currencyr for jQuery.', self::Textdomain ) );
     }
 
     /**
@@ -908,6 +908,10 @@ class Currencyr
             }
 
             foreach( $target as $code ) {
+                if ( !array_key_exists( $code, $rates ) ) {
+                    continue;
+                }
+
                 if ( $from == $this->base ) {
                     $result[$code] = $amount * $rates[$code];
                 } else {
