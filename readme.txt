@@ -9,7 +9,7 @@ Requires at least: 3.3
 Tested up to: 3.3
 Stable tag: 1.0.2
 
-A simple yet advanced, intuitive, easy-to-use and complete currency converter plugin with a beatiful unique converter tooltip.
+A simple yet advanced, intuitive, easy-to-use and complete currency converter plugin with a beautiful unique converter tooltip.
 
 == Description ==
 
