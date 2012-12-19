@@ -15,6 +15,8 @@ A simple yet advanced, intuitive, easy-to-use and complete currency converter pl
 
 Instead of traditional "calculator" looks converter, Currencyr take the advance of "tooltip" and sit right at the amount to allow user convert it. Support various exchange rates provider API running as WP Cron task and able to auto-determinate local currency of visitor. Currencyr also offers currency converter widget, shortcode and function.
 
+Visit plugin homepage at http://adivalabs.com/currencyr or head over the demo at http://wp.adivalabs.com/currencyr.
+
 = Features =
 
 * Inline converter using Currencyr for jQuery
@@ -27,8 +29,6 @@ Instead of traditional "calculator" looks converter, Currencyr take the advance 
 * Auto-determinate local currency via IP detection using [IP2C](http://firestats.cc/wiki/ip2c)
 * Support integration with various ecommerce plugins - WooCommerce, WP-eCommerce, Shopp and Easy Digital Downloads
 * Translation support
-
-Visit http://adivalabs.com/currencyr for futher details and demo.
 
 = Shortcode =
 
