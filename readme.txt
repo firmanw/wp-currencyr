@@ -81,8 +81,9 @@ If you have any feedback, any at all, tweet [@firmanw](http://twitter.com/firman
 
 == Screenshots ==
 
-1. Converter tooltip sit right at the amount
+1. Converter tooltip
 2. The settings page
+3. The widget
 
 == Changelog ==
 
