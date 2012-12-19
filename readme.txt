@@ -5,8 +5,8 @@ Author URI: http://firmanw.com
 Plugin URI: http://adivalabs.com/currencyr
 Donate Link: http://adivalabs.com/donate
 Tags: money, currency, conversion, ecommerce, shop, store
-Requires at least: 3.4
-Tested up to: 3.4
+Requires at least: 3.3
+Tested up to: 3.3
 Stable tag: 1.0.2
 
 A simple yet advanced, intuitive, easy-to-use and complete currency converter plugin with a beatiful unique converter tooltip.
