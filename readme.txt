@@ -9,22 +9,24 @@ Requires at least: 3.4
 Tested up to: 3.4
 Stable tag: 1.0.2
 
-A simple yet advanced, intuitive, easy-to-use and classy currency converter tooltip.
+A simple yet advanced, intuitive, easy-to-use and complete currency converter plugin with a beatiful unique converter tooltip.
 
 == Description ==
 
-Instead of traditional "calculator" looks converter, Currencyr take the advance of "tooltip" and sit right at the amount to allow user convert it.
+Instead of traditional "calculator" looks converter, Currencyr take the advance of "tooltip" and sit right at the amount to allow user convert it. Support various exchange rates provider API running as WP Cron task and able to auto-determinate local currency of visitor. Currencyr also offers currency converter widget, shortcode and function.
 
 = Features =
 
+* Inline converter using Currencyr for jQuery
 * Various exchange rates providers - Yahoo!, Google, Open Exchange Rates, European Central Bank and FoxRates
-* Support database cache driven for fast load
+* Support database cache driven for fast response
 * WP Cron task scheduler enabled
 * Shortcode quick conversion support
 * Currency table and converter widget
-* Inline converter using Currencyr for jQuery
-* Auto-determinate local currency
+* Function for theme developer
+* Auto-determinate local currency via IP detection using [IP2C](http://firestats.cc/wiki/ip2c)
 * Support integration with various ecommerce plugins - WooCommerce, WP-eCommerce, Shopp and Easy Digital Downloads
+* Translation support
 
 Visit http://adivalabs.com/currencyr for futher details and demo.
 
