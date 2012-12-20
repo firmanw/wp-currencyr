@@ -373,7 +373,7 @@ class Currencyr
            Use only if you put your plugin or option page in the top level via add_menu_page()
         */
         #toplevel_page_<?php echo self::Id; ?> .wp-menu-image {
-            background: url(<?php echo CURRENCYR_PLUGIN_URL ?>/assets/images/menuicon-sprite.png) no-repeat 6px 6px !important;
+            background: url(<?php echo CURRENCYR_PLUGIN_ASSETS ?>/images/menuicon-sprite.png) no-repeat 6px 6px !important;
         }
         /* We need to hide the generic.png img element inserted by default */
         #toplevel_page_<?php echo self::Id; ?> .wp-menu-image img {
@@ -385,7 +385,7 @@ class Currencyr
          
         /* Option Screen - 32px */
         #icon-options-<?php echo self::Id; ?>.icon32 {
-            background: url(<?php echo CURRENCYR_PLUGIN_URL ?>/assets/images/pageicon32.png) no-repeat left top !important;
+            background: url(<?php echo CURRENCYR_PLUGIN_ASSETS ?>/images/pageicon32.png) no-repeat left top !important;
         }
         
         @media
@@ -398,7 +398,7 @@ class Currencyr
                Use only if you put your plugin or option page in the top level via add_menu_page()
             */
             #toplevel_page_<?php echo self::Id; ?> .wp-menu-image {
-                background-image: url('<?php bloginfo('template_url') ?>/images/menuicon-sprite-2x.png') !important;
+                background-image: url('<?php echo CURRENCYR_PLUGIN_ASSETS; ?>/images/menuicon-sprite-2x.png') !important;
                 -webkit-background-size: 16px 48px;
                 -moz-background-size: 16px 48px;
                 background-size: 16px 48px;
@@ -406,7 +406,7 @@ class Currencyr
              
             /* Option Screen - 32px @2x */
             #icon-options-<?php echo self::Id; ?>.icon32 {
-                background-image: url('<?php bloginfo('template_url') ?>/images/pageicon32-2x.png') !important;
+                background-image: url('<?php echo CURRENCYR_PLUGIN_ASSETS; ?>/images/pageicon32-2x.png') !important;
                 -webkit-background-size: 32px 32px;
                 -moz-background-size: 32px 32px;
                 background-size: 32px 32px;
