@@ -7,7 +7,7 @@ Donate Link: http://adivalabs.com/donate
 Tags: money, currency, conversion, ecommerce, shop, store
 Requires at least: 3.3
 Tested up to: 3.3
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 
 A simple yet advanced, intuitive, easy-to-use and complete currency converter plugin with a beautiful unique converter tooltip.
 
@@ -29,6 +29,8 @@ Visit plugin homepage at http://adivalabs.com/currencyr or head over the demo at
 * Auto-determinate local currency via IP detection using [IP2C](http://firestats.cc/wiki/ip2c)
 * Support integration with various ecommerce plugins - WooCommerce, WP-eCommerce, Shopp and Easy Digital Downloads
 * Translation support
+
+*Note: This plugin requires at least PHP 5.3.0 and do not ever try to install if you running older version of PHP.*
 
 = Shortcode =
 
@@ -86,6 +88,10 @@ If you have any feedback, any at all, tweet [@firmanw](http://twitter.com/firman
 3. The widget
 
 == Changelog ==
+
+= 1.0.3 =
+
+* Fixed menu and page icon for Retina Display.
 
 = 1.0.2 =
 
