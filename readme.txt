@@ -2,8 +2,8 @@
 Author: Firman Wandayandi
 Contributors: firmanw
 Author URI: http://firmanw.com
-Plugin URI: http://adivalabs.com/currencyr
-Donate Link: http://adivalabs.com/donate
+Plugin URI: http://firmanw.github.com/wp-currencyr
+Donate Link: http://firmanw.com/donate
 Tags: money, currency, conversion, ecommerce, shop, store
 Requires at least: 3.3
 Tested up to: 3.3
@@ -15,7 +15,7 @@ A simple yet advanced, intuitive, easy-to-use and complete currency converter pl
 
 Instead of traditional "calculator" looks converter, Currencyr take the advance of "tooltip" and sit right at the amount to allow user convert it. Support various exchange rates provider API running as WP Cron task and able to auto-determinate local currency of visitor. Currencyr also offers currency converter widget, shortcode and function.
 
-Visit plugin homepage at http://adivalabs.com/currencyr or head over the demo at http://wp.adivalabs.com/currencyr.
+Visit plugin homepage at http://firmanw.github.com/wp-currencyr or head over the demo at http://demo.firmanw.com/wp-plugin/currencyr.
 
 = Features =
 
