@@ -15,7 +15,7 @@ A simple yet advanced, intuitive, easy-to-use and complete currency converter pl
 
 Instead of traditional "calculator" looks converter, Currencyr take the advance of "tooltip" and sit right at the amount to allow user convert it. Support various exchange rates provider API running as WP Cron task and able to auto-determinate local currency of visitor. Currencyr also offers currency converter widget, shortcode and function.
 
-Visit plugin homepage at http://firmanw.github.com/wp-currencyr or head over the demo at http://demo.firmanw.com/wp-plugin/currencyr.
+Visit plugin homepage at http://firmanw.github.com/wp-currencyr or head over the demo at http://demo.firmanw.com/wp/currencyr.
 
 = Features =
 
