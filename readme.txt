@@ -91,7 +91,7 @@ If you have any feedback, any at all, tweet [@firmanw](http://twitter.com/firman
 
 = 1.0.3 =
 
-* Fixed menu and page icon for Retina Display.
+* Fixed menu and page icon for HiDPI screen.
 * Fixed some URLs
 
 = 1.0.2 =
