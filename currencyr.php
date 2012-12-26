@@ -10,7 +10,7 @@ Text Domain: currencyr
 Domain Path: /languages
 */
 
-define( 'CURRENCYR_VERSION', '1.0.1' );
+define( 'CURRENCYR_VERSION', '1.0.3' );
 define( 'CURRENCYR_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 define( 'CURRENCYR_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'CURRENCYR_PLUGIN_ASSETS', plugin_dir_url( __FILE__ ) . 'assets' );

@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Currencyr for WordPress 1.0.1\n"
+"Project-Id-Version: Currencyr for WordPress 1.0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-14 08:25+0700\n"
 "PO-Revision-Date: 2012-12-18 18:41+0700\n"
