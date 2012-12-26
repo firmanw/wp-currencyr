@@ -3,7 +3,7 @@
 Plugin Name: Currencyr
 Plugin URI: http://adivalabs.com/currencyr
 Description: An easy, simple yet advance currency converter. Support Yahoo!, Google, Open Exchange Rates, FoXRate and European Central Bank exchange rates service, currency exchange rates list and converter widget, shortcode, WP Cron schedule, cache, custom currency and ip to local currency.
-Version: 1.0.2
+Version: 1.0.3
 Author: Firman Wandayandi
 Author URI: http://firmanw.com/
 Text Domain: currencyr
