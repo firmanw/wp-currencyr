@@ -18,7 +18,7 @@ require_once CURRENCYR_LIBS . '/abstract-currencyr-provider.php';
  * Currencyr_Widget
  */
 require_once CURRENCYR_LIBS . '/class-currencyr-widget.php';
- 
+
 /**
  * Currencyr class.
  *
@@ -36,16 +36,16 @@ class Currencyr
 
     /**
      * Currency exchange service providers.
-     * 
+     *
      * @var array
      * @since 1.0
      */
     protected $providers = array();
 
-    
+
     /**
      * Default settings
-     * 
+     *
      * @var array
      * @since 1.0
      */
@@ -63,19 +63,19 @@ class Currencyr
         'precision'             => 2
     );
 
-    
+
     /**
      * List of created WordPress pages returned by add_menu_page() and add_submenu_page().
-     * 
+     *
      * @var array
      * @since 1.0
      */
     protected $pages = array();
 
-    
+
     /**
      * Constructor
-     * 
+     *
      * @access public
      * @return void
      */
@@ -107,7 +107,7 @@ class Currencyr
 
     /**
      * Magic function to access settings and essential variables.
-     * 
+     *
      * @param string $name
      * @return mixed
      * @since 1.0
@@ -152,10 +152,10 @@ class Currencyr
         return null;
     }
 
-    
+
     /**
      * Plugin activation
-     * 
+     *
      * @return void
      * @since 1.0
      */
@@ -184,10 +184,10 @@ class Currencyr
         $this->set_schedule();
     }
 
-    
+
     /**
      * Plugin deactivation
-     * 
+     *
      * @return void
      * @since 1.0
      */
@@ -205,15 +205,15 @@ class Currencyr
 
         // Delete transient
         delete_transient( self::Id . '_updated' );
-        
+
         // Delete cron schedule
         wp_clear_scheduled_hook( 'currencyr_update_rates' );
     }
 
-    
+
     /**
      * Update function
-     * 
+     *
      * @return void
      * @since 1.0
      */
@@ -224,19 +224,19 @@ class Currencyr
 
     /**
      * Add settings link into plugin page.
-     * 
+     *
      * @param array $actions Currency links.
      * @return array
      */
     public function plugin_action_links( $actions )
     {
-        array_unshift($actions, sprintf( '<a href="%s">%s</a>', admin_url( 'admin.php?page=' . self::Id ), __( 'Settings', self::Textdomain ) ) ); 
+        array_unshift($actions, sprintf( '<a href="%s">%s</a>', admin_url( 'admin.php?page=' . self::Id ), __( 'Settings', self::Textdomain ) ) );
         return $actions;
     }
 
     /**
      * Initialization
-     * 
+     *
      * @return void
      * @since 1.0
      */
@@ -260,7 +260,7 @@ class Currencyr
 
     /**
      * print_styles callback.
-     * 
+     *
      * @return void
      * @since 1.0
      */
@@ -273,7 +273,7 @@ class Currencyr
 
     /**
      * print_scripts callback.
-     * 
+     *
      * @return void
      * @since 1.0
      */
@@ -333,10 +333,10 @@ class Currencyr
     {
         return self::Id . "_settings[{$field}]";
     }
-    
+
     /**
      * admin_init callback.
-     * 
+     *
      * @return void
      * @since 1.0
      */
@@ -369,25 +369,25 @@ class Currencyr
     {
     ?>
     <style type="text/css" id="currencyr-menu-css">
-        /* Admin Menu - 16px 
+        /* Admin Menu - 16px
            Use only if you put your plugin or option page in the top level via add_menu_page()
         */
         #toplevel_page_<?php echo self::Id; ?> .wp-menu-image {
-            background: url(<?php echo CURRENCYR_PLUGIN_ASSETS ?>/images/menuicon-sprite.png) no-repeat 6px 6px !important;
+            background: url(<?php echo CURRENCYR_PLUGIN_ASSETS ?>/images/menuicon-sprite.png) no-repeat 6px 6px;
         }
         /* We need to hide the generic.png img element inserted by default */
         #toplevel_page_<?php echo self::Id; ?> .wp-menu-image img {
             display: none;
         }
         #toplevel_page_<?php echo self::Id; ?>:hover .wp-menu-image, #toplevel_page_currencyr.wp-has-current-submenu .wp-menu-image {
-            background-position: 6px -26px !important;
+            background-position: 6px -26px;
         }
-         
+
         /* Option Screen - 32px */
         #icon-options-<?php echo self::Id; ?>.icon32 {
-            background: url(<?php echo CURRENCYR_PLUGIN_ASSETS ?>/images/pageicon32.png) no-repeat left top !important;
+            background: url(<?php echo CURRENCYR_PLUGIN_ASSETS ?>/images/pageicon32.png) no-repeat left top;
         }
-        
+
         @media
         only screen and (-webkit-min-device-pixel-ratio: 1.5),
         only screen and (   min--moz-device-pixel-ratio: 1.5),
@@ -402,24 +402,24 @@ class Currencyr
                 -webkit-background-size: 16px 48px;
                 -moz-background-size: 16px 48px;
                 background-size: 16px 48px;
-            } 
-             
+            }
+
             /* Option Screen - 32px @2x */
             #icon-options-<?php echo self::Id; ?>.icon32 {
                 background-image: url('<?php echo CURRENCYR_PLUGIN_ASSETS; ?>/images/pageicon32-2x.png') !important;
                 -webkit-background-size: 32px 32px;
                 -moz-background-size: 32px 32px;
                 background-size: 32px 32px;
-            }   
+            }
         }
     </style>
     <?php
     }
 
-    
+
     /**
      * admin_menu callback.
-     * 
+     *
      * @return void
      * @since 1.0
      */
@@ -430,10 +430,10 @@ class Currencyr
         // $this->pages['currencies'] = add_submenu_page( self::Slug, __( 'Currencies', self::Textdomain ), __( 'Currencies', self::Textdomain ), 'manage_options', self::Slug . '_currencies', array( $this, 'currencies_page' ) );
     }
 
-    
+
     /**
      * contextual_help callback.
-     * 
+     *
      * @param string $contextual_help
      * @param string $screen_id
      * @param object $screen
@@ -446,7 +446,7 @@ class Currencyr
             $screen->add_help_tab( array(
                 'id'      => 'overview',
                 'title'   => 'Overview',
-                'content' => 
+                'content' =>
                   '<p>This is screen where you can configure the Currencyr settings.</p>
                   <p>Currencyr is able to use WooCommerce, WP-eCommerce, Shopp and Easy Digital Downloads <em>currency</em> setting,
                   the checkbox/radio will appear once one or more of those plugin activated.</p>'
@@ -454,10 +454,10 @@ class Currencyr
         }
     }
 
-    
+
     /**
      * section_callback callback.
-     * 
+     *
      * @return void
      * @since 1.0
      */
@@ -466,10 +466,10 @@ class Currencyr
         // do nothing
     }
 
-    
+
     /**
      * provider setting input callback.
-     * 
+     *
      * @return void
      * @since 1.0
      */
@@ -486,7 +486,7 @@ class Currencyr
 
     /**
      * base setting input callback.
-     * 
+     *
      * @return void
      * @since 1.0
      */
@@ -561,7 +561,7 @@ class Currencyr
 
     /**
      * update setting input callback.
-     * 
+     *
      * @return void
      * @since 1.0
      */
@@ -589,7 +589,7 @@ class Currencyr
 
     /**
      * shortcode setting input callback.
-     * 
+     *
      * @since  1.0
      */
     public function setting_shortcode_separator()
@@ -604,7 +604,7 @@ class Currencyr
 
     /**
      * Open Exchange APP ID setting input callback.
-     * 
+     *
      * @since  1.0
      */
     public function setting_oxrapp_id()
@@ -619,7 +619,7 @@ class Currencyr
 
     /**
      * Amount jQuery Selector setting input callback.
-     * 
+     *
      * @since  1.0
      */
     public function setting_amount_selector()
@@ -634,7 +634,7 @@ class Currencyr
 
     /**
      * Inline converter setting input callback.
-     * 
+     *
      * @since  1.0
      */
     public function setting_inline_converter()
@@ -649,7 +649,7 @@ class Currencyr
 
     /**
      * Thousand separator
-     * 
+     *
      * @since  1.0
      */
     public function setting_thousand( $args )
@@ -663,7 +663,7 @@ class Currencyr
 
     /**
      * Decimal point separator
-     * 
+     *
      * @since  1.0
      */
     public function setting_decimal()
@@ -677,7 +677,7 @@ class Currencyr
 
     /**
      * Decimal places
-     * 
+     *
      * @since  1.0
      */
     public function setting_precision()
@@ -691,7 +691,7 @@ class Currencyr
 
     /**
      * Settings page callback.
-     * 
+     *
      * @return void
      * @since 1.0
      */
@@ -703,7 +703,7 @@ class Currencyr
           <h2><?php _e( 'Currencyr Settings', self::Textdomain ); ?></h2>
 
           <?php if( isset($_GET['settings-updated']) && $_GET['settings-updated'] ) : ?>
-          <div id="message" class="updated below-h2"> 
+          <div id="message" class="updated below-h2">
             <p><strong><?php _e( 'Settings saved.', self::Textdomain ); ?></strong></p>
           </div>
           <?php endif; ?>
@@ -736,7 +736,7 @@ class Currencyr
 
     /**
      * shortcode callback.
-     * 
+     *
      * @param mixed $atts
      * @return void
      * @since 1.0
@@ -749,7 +749,7 @@ class Currencyr
             'to'        => 'usd',
             'provider'  => $this->settings['provider']
         ), $atts ) );
-        
+
         $amount = (float) $amount;
 
         $res = $this->convert( $to, $amount, $from, $provider );
@@ -763,7 +763,7 @@ class Currencyr
 
     /**
      * sanitize_input callback.
-     * 
+     *
      * @return void
      * @since 1.0
      */
@@ -786,7 +786,7 @@ class Currencyr
 
     /**
      * Set WP Cron schedule.
-     * 
+     *
      * @param integer $interval Interval in second. (optional) (default: null)
      * @since 1.0
      */
@@ -829,7 +829,7 @@ class Currencyr
 
     /**
      * Get available currencies.
-     * 
+     *
      * @return array()
      * @since 1.0
      */
@@ -868,7 +868,7 @@ class Currencyr
 
     /**
      * Convert the currency.
-     * 
+     *
      * @param string $to Currency code. Use commas separator for multiple.
      * @param float $amount Amount (optional) (default: 1)
      * @param string $from From currency code. Use the base setting if omitted. (optional) (default: null)
@@ -925,7 +925,7 @@ class Currencyr
 
     /**
      * Update the exchange rates.
-     * 
+     *
      * @return string Formatted time of last updated.
      * @since 1.0
      */
@@ -947,7 +947,7 @@ class Currencyr
 
     /**
      * Ajaxified of update exchange rates function.
-     * 
+     *
      * @see Currencyr_Lite::update_rates()
      * @since 1.0
      */
