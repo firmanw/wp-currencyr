@@ -1,0 +1,171 @@
+/* 1. RESET (http://meyerweb.com/eric/tools/css/reset/)
+-----------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } :focus { outline: 0; } ins { text-decoration: none; } del { text-decoration: line-through; } table { border-collapse: collapse; border-spacing: 0; }
+
+
+/* 2. CLEARING
+-----------------------------------------------------------------------------------*/
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } .clearfix { display: inline-block; } /* Hide from IE Mac \*/ .clearfix { display: block; } /* End hide from IE Mac */ .none { display: none; } /* End Clearfix */
+.clear { clear: both; display: block; font-size: 0; height: 0; line-height: 0; width:100%; }
+
+body {
+	background: #414449 url(images/bg.jpg);
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.625;
+	color: #fff;
+}
+img,
+object,
+iframe,
+embed {
+  max-width: 100%;
+  overflow: hidden;
+}
+a {
+	color: #7fac09;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+hr {
+	border: none;
+	background: #fff;
+	height: 1px;
+	margin: 20px 0;
+}
+p,
+ul {
+	margin-bottom: 1.625em;
+}
+p:last-child,
+ul:last-child {
+	margin-bottom: 0;
+}
+
+.container {
+	max-width: 940px;
+	margin: 40px auto;
+}
+
+/* Embed */
+.video {
+  margin-bottom: 1.66667em;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.video embed,
+.video iframe,
+.video object {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.pull_right {
+	float: right;
+}
+.pull_left {
+	float: left;
+}
+.span {
+	width: 50%;
+}
+.button {
+  line-height: 20px;
+  padding: 5px 10px;
+  color: #fff;
+
+  border: 1px solid #405705;
+  border-radius: 3px;
+
+  /* Borders */
+
+  /* Background */
+  background: #729a0b;
+
+  /* Shadow */
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,.25), 1px 1px 0 rgba(0,0,0,.1);
+  text-shadow: 1px 1px 0 rgba(0,0,0,.25);
+
+  margin-right: .5em;
+}
+.button,
+.button:hover {
+	text-decoration: none;
+}
+
+article header {
+	margin-bottom: 20px;
+}
+article header h1 {
+	font-size: 30px;
+}
+article header p {
+	font-size: 16px;
+	color: #999;
+}
+#intro {
+	font-size: 16px;
+	padding-bottom: 50px;
+	border-bottom: 3px solid #729a0b;
+}
+#demo {
+	width: 460px;
+	padding-bottom: 320px;
+}
+#content {
+	margin-top: 50px;
+}
+#content img {
+	margin: 0 45px 20px 0;
+}
+#content strong {
+	font-size: 16px;
+}
+
+#features {
+	overflow: hidden;
+	border: 1px solid #36393d;
+	border-radius: 10px;
+	padding: 10px 20px;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 40px;
+}
+#features li {
+	background: url(images/bullet.png) left .8em no-repeat;
+	display: block;
+	float: left;
+	width: 18%;
+	margin-right: 6%;
+	padding: 5px 0 5px 16px;
+}
+#features li.last {
+	margin-right:0 !important;
+	clear:right;
+}
+footer {
+	padding: 10px 0;
+	margin-top: 40px;
+	overflow: hidden;
+}
+footer #favicon {
+	float: right;
+}
+
+/* Share */
+.share-links {
+	overflow: hidden;
+}
+.share-links div {
+	float: left;
+	width: 100px;
+	height: 24px;
+}
+.share-links .fb-like {
+	margin-top: -4px;
+}
