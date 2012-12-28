@@ -2,15 +2,15 @@
 /*
 Plugin Name: Currencyr
 Plugin URI: http://firmanw.github.com/wp-currencyr
-Description: An easy, simple yet advance currency converter. Support Yahoo!, Google, Open Exchange Rates, FoXRate and European Central Bank exchange rates service, currency exchange rates list and converter widget, shortcode, WP Cron schedule, cache, custom currency and ip to local currency.
-Version: 1.0.3
+Description: Instead of traditional "calculator" looks converter, Currencyr take the advance of "tooltip" and sit right at the amount to allow user convert it. Support various exchange rates provider API running as WP Cron task and able to auto-determinate local currency of visitor. Currencyr also offers currency converter widget, shortcode and function.
+Version: 1.0.4
 Author: Firman Wandayandi
 Author URI: http://firmanw.com/
 Text Domain: currencyr
 Domain Path: /languages
 */
 
-define( 'CURRENCYR_VERSION', '1.0.3' );
+define( 'CURRENCYR_VERSION', '1.0.4' );
 define( 'CURRENCYR_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 define( 'CURRENCYR_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'CURRENCYR_PLUGIN_ASSETS', plugin_dir_url( __FILE__ ) . 'assets' );

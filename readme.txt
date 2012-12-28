@@ -7,7 +7,7 @@ Donate Link: http://firmanw.com/donate
 Tags: money, currency, conversion, ecommerce, shop, store
 Requires at least: 3.3
 Tested up to: 3.3
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 
 A simple yet advanced, intuitive, easy-to-use and complete currency converter plugin with a beautiful unique converter tooltip.
 
@@ -88,6 +88,10 @@ If you have any feedback, any at all, tweet [@firmanw](http://twitter.com/firman
 3. The widget
 
 == Changelog ==
+
+= 1.0.4 =
+
+* Fixed wpdb error while retrieving WP e-Commerce configuration.
 
 = 1.0.3 =
 
