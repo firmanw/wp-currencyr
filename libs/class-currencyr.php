@@ -1088,7 +1088,7 @@ class Currencyr
 
         $id = get_option( 'currency_type' );
         if ( $id ) {
-            return $wpdb->get_var( $wpdb->prepare( 'SELECT code FROM ' . WPSC_TABLE_CURRENCY_LIST . ' WHERE id = ' . $id ) );
+            return $wpdb->get_var( $wpdb->prepare( 'SELECT code FROM ' . WPSC_TABLE_CURRENCY_LIST . ' WHERE id = %d', $id ) );
         }
     }
 
