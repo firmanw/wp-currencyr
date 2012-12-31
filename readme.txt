@@ -43,11 +43,11 @@ To enable the shortcode simply use [currencyr] and use the following syntax:
 * **from** (optional) - The currency code. If omitted the Base Currency from setting will be use.
 
 Examples:
-`[currencyr=99.99 to=gbp]`
+`[currencyr amount=99.99 to=gbp]`
 
-`[currencyr=99.99 from=aud to=gbp]`
+`[currencyr amount=99.99 from=aud to=gbp]`
 
-`[currencyr=99.99 to=gbp|eur|cad]`
+`[currencyr amount=99.99 to=gbp|eur|cad]`
 
 = Function Call =
 
